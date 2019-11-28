@@ -78,8 +78,8 @@ Now that we created this collection, two groups should have been created automat
 
 .. code-block:: bash
 
-    curl -s ${SERVER}/buckets/main-workspace/groups/password-recipes-editors | jq
-    curl -s ${SERVER}/buckets/main-workspace/groups/password-recipes-reviewers | jq
+    curl -s ${SERVER}/buckets/main-workspace/groups/password-recipes-editors -u editor:3d1t0r| jq
+    curl -s ${SERVER}/buckets/main-workspace/groups/password-recipes-reviewers -u editor:3d1t0r | jq
 
 
 Manage reviewers
